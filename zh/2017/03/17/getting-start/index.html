@@ -3,17 +3,33 @@
 <head>
   <meta charset="utf-8">
   
-  <title>迷彩网后博客园</title>
+  <title>Getting Start with Hexo Blog | 迷彩网后博客园</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="This is my GitHub blog home">
-<meta property="og:type" content="website">
-<meta property="og:title" content="迷彩网后博客园">
-<meta property="og:url" content="http://leihuagh.github.io/index.html">
+  <meta name="description" content="RequirementsInstalling Hexo is quite easy. However, you do need to have a couple of other things installed first:
+
+Install Node.js. Download right side one.
+Install Git. Download the latest version
+
+I">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Getting Start with Hexo Blog">
+<meta property="og:url" content="http://leihuagh.github.io/zh/2017/03/17/getting-start/index.html">
 <meta property="og:site_name" content="迷彩网后博客园">
-<meta property="og:description" content="This is my GitHub blog home">
+<meta property="og:description" content="RequirementsInstalling Hexo is quite easy. However, you do need to have a couple of other things installed first:
+
+Install Node.js. Download right side one.
+Install Git. Download the latest version
+
+I">
+<meta property="og:updated_time" content="2017-03-17T17:49:59.521Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="迷彩网后博客园">
-<meta name="twitter:description" content="This is my GitHub blog home">
+<meta name="twitter:title" content="Getting Start with Hexo Blog">
+<meta name="twitter:description" content="RequirementsInstalling Hexo is quite easy. However, you do need to have a couple of other things installed first:
+
+Install Node.js. Download right side one.
+Install Git. Download the latest version
+
+I">
   
     <link rel="alternate" href="/atom.xml" title="迷彩网后博客园" type="application/atom+xml">
   
@@ -66,73 +82,9 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-working-with-images" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-getting-start" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2017/03/17/working-with-images/" class="article-date">
-  <time datetime="2017-03-17T16:47:08.000Z" itemprop="datePublished">2017-03-17</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/tutorials/">tutorials</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/17/working-with-images/">Working with Images</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="Create-the-Post-with-Images"><a href="#Create-the-Post-with-Images" class="headerlink" title="Create the Post with Images"></a>Create the Post with Images</h3><p>A good practice when starting new posts is to use the “draft” feature. Drafts will not be published by default, so you are free to make changes to other posts while keeping unfinished drafts hidden from public.</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ hexo new draft <span class="string">"working-with-images"</span></div><div class="line"><span class="comment"># creates -&gt; ./source/_drafts/working-with-images.md</span></div></pre></td></tr></table></figure>
-<h3 id="Inserting-images"><a href="#Inserting-images" class="headerlink" title="Inserting images"></a>Inserting images</h3><p>Images and other asset files can be placed in subdirectories under the ./source/ folder. Use a picture downloaded from google images. In my case, I use Hexo logo. Download the picture into the path below,</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">./<span class="built_in">source</span>/_images/hexo_logo.png</div></pre></td></tr></table></figure>
-<h3 id="Adding-Image-Link-to-Draft-File"><a href="#Adding-Image-Link-to-Draft-File" class="headerlink" title="Adding Image Link to Draft File"></a>Adding Image Link to Draft File</h3><p>Edit your draft by adding the code below</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">![Hexo Logo](./images/hexo_logo.png)</div></pre></td></tr></table></figure>
-<p><img src="./images/hexo_logo.png" alt="Hexo Logo"></p>
-<h3 id="Publishing-Drafts"><a href="#Publishing-Drafts" class="headerlink" title="Publishing Drafts"></a>Publishing Drafts</h3><p>When it’s time to move the draft to a “live” post for the world to see, use the hexo publish command:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo publish working-with-images</div></pre></td></tr></table></figure>
-<p>A few things will happen when this command is run:</p>
-<ul>
-<li>The markdown file My-First-Blog-Post.md moves from ./source/_drafts/ to ./source/_posts.</li>
-<li>The file’s “front-matter” changes to include a publish date:</li>
-</ul>
-<h3 id="Generate-the-Static-File"><a href="#Generate-the-Static-File" class="headerlink" title="Generate the Static File"></a>Generate the Static File</h3><p>Finally, prepare the entire site for deployment. Run the hexo generate command:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ hexo generate </div><div class="line"><span class="comment"># generates -&gt; ./public/</span></div></pre></td></tr></table></figure>
-<h3 id="Next-Steps"><a href="#Next-Steps" class="headerlink" title="Next Steps"></a>Next Steps</h3><ul>
-<li>Update gitHub repository </li>
-<li>Detail way refer to Getting Start Page</li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://leihuagh.github.io/2017/03/17/working-with-images/" data-id="cj0e254sr0006zsfsoj1i3e3q" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-getting-start" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/03/17/getting-start/" class="article-date">
+    <a href="/zh/2017/03/17/getting-start/" class="article-date">
   <time datetime="2017-03-17T13:56:02.000Z" itemprop="datePublished">2017-03-17</time>
 </a>
     
@@ -147,8 +99,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/17/getting-start/">Getting Start with Hexo Blog</a>
+    <h1 class="article-title" itemprop="name">
+      Getting Start with Hexo Blog
     </h1>
   
 
@@ -207,61 +159,28 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/03/16/hello-world/" class="article-date">
-  <time datetime="2017-03-17T01:29:02.000Z" itemprop="datePublished">2017-03-16</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/tutorials/">tutorials</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+    <a href="/2017/03/17/working-with-images/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
         
+          Working with Images
+        
+      </div>
+    </a>
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/16/hello-world/">Hello World Hexo Blog</a>
-    </h1>
   
+    <a href="/2017/03/16/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World Hexo Blog</div>
+    </a>
+  
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://leihuagh.github.io/2017/03/16/hello-world/" data-id="cj0e254sb0000zsfs75k9cbc2" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
-
-    </footer>
-  </div>
   
 </article>
-
-
-  
 
 </section>
         
